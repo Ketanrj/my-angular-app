@@ -10,5 +10,15 @@ import { RouterOutlet } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-angular-app';
+  title = 'Registration';
+
+  displayname = '';
+  displaymail = '';
+  displaypassword = '';
+
+  getValue(name:string, mail:string, pass:string){
+    this.displayname = name;
+    this.displaymail = mail;
+    this.displaypassword = pass;
+  }
 }
